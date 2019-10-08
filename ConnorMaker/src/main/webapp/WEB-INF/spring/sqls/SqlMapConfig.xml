@@ -5,11 +5,11 @@
   
 <configuration>
 	<typeAliases>
-		<typeAlias type="com.maker.connor.dto.scheduleDto" alias="schedule"/>
+		<typeAlias type="com.maker.connor.dto.ScheduleDto" alias="Schedule"/>
 	</typeAliases>
 	
 	<mappers>
-		<mapper resource="/com/sqlMap/mapper/schedule.xml"/>
+		<mapper resource="/com/sqlMap/mapper/Schedule.xml"/>
 	</mappers>
 </configuration>
 

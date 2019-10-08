@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* 마을 내용 랩 */
+#town {
+	display: grid;
+	grid-template-columns:410px 1fr;
+	grid-template-areas:
+	"grid_town_menu grid_town_content"
+}
+
+/* 마을 배열 그리드*/
+#town_menu_wrap {
+	grid-area:grid_town_menu;
+	margin-right:30px;
+	padding:1px;
+}
+
+#town_content_wrap {
+	grid-area:grid_town_content;
+}
+
+/* ------------------------- */
+/*마을 메뉴*/
+#town_menu {
+	margin-bottom:20px;
+}
+/* 마을 메뉴 상단 */
+#town_menu_map_image {
+	height:200px;
+	background: url("../images/common/town_map1.png") no-repeat;
+	background-size: 400px;
+}
+
+/* 마을 메뉴 하단 */
+#town_menu>a {
+	display:inline-block;
+	width:165px;
+	height:70px;
+	padding:3px;
+	margin:1px;
+}
+
+#town_menu>a>img {
+	float: left;
+	width:66px;
+	margin:2px;
+	margin-right:8px;
+}
+
+#town_menu>a>span {
+	font:1.5rem "HSBombaram";
+	line-height: 70px;
+}
+
+#town_menu_money {
+	height: 60px;
+	text-align:center;
+	line-height: 60px;
+}
+
+/* 마을 메엔 상단 지도 */
+#town_content_map {
+	height:380px;
+	background: url("../images/common/town_map2.png") no-repeat;
+	background-size: 790px;
+	margin-bottom:20px;
+}
+
+/* 마을 메인 하단 아이의 말 */
+#town_content {
+	height:95px;
+	padding: 30px;
+}
+
+/* ------------------------- */
+/* 샵 물품 */
+#shop_content>a {
+	display:inline-block;
+	width:234px;
+	height:94px;
+	padding:8px 4px;
+	margin:2px;
+}
+
+#shop_content>a>img {
+	float: left;
+	width:80px;
+	margin:4px;
+	margin-right:8px;
+}
+
+#shop_content>a>p:nth-child(even) {
+	height:70px;
+	overflow: hidden;
+}
+
+#shop_content>a>p:nth-child(odd) {
+	text-align:right;
+	font-weight:bold;
+	padding-right:3px;
+}
+
+/* 샵 페이지 버튼 */
+#shop_page {
+	display:inline-block;
+	width:100%;
+	height:70px;
+	text-align:center;
+}
+
+#shop_page>a {
+	margin:5px;
+	padding:5px 10px;
+	color: #f7c9b5;
+	font-size:1.2rem;
+	line-height: 70px;
+	text-align:center;
+}

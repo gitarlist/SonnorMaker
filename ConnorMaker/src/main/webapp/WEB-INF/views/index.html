@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=1400">
+<title>코너 메이커</title>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!-- 메뉴&내용 레이아웃 배치용 전체 그리드 -->
+<div class="wrapper">
+	<!-- 메뉴 그리드 & 메뉴 박스 -->
+	<div id="header">
+		<!-- 윗부분 여백 -->
+		<div class="top_header"></div>
+		<!-- 헤더 -->
+		<div class="bottom_header">
+			<!-- 메뉴 -->
+			<div class="bottom_header_inner">
+			<ul class="gnb">
+	        	<li>
+	            	<a href="#">메인</a>
+	            </li>
+	        	<li>
+	            	<a href="#">아이 방</a>
+	                <ul class="depth2 gnb1">
+	                	<li><a href="#">에드워드</a></li>
+	                	<li><a href="#">에단</a></li>
+	                	<li><a href="#">에이크</a></li>
+	                	<li><a href="#">엘리엇</a></li>
+	                </ul>
+	            </li>
+	        	<li>
+	            	<a href="#">상태 일람</a>
+	                <ul class="depth2 gnb2">
+	                	<li><a href="#">에드워드</a></li>
+	                	<li><a href="#">에단</a></li>
+	                	<li><a href="#">에이크</a></li>
+	                	<li><a href="#">엘리엇</a></li>
+	                </ul>
+	            </li>
+	        	<li>
+	            	<a href="#">일정</a>
+	                <ul class="depth2 gnb3">
+	                	<li><a href="#">에드워드</a></li>
+	                	<li><a href="#">에단</a></li>
+	                	<li><a href="#">에이크</a></li>
+	                	<li><a href="#">엘리엇</a></li>
+	                </ul>
+	            </li>
+	        	<li>
+	            	<a href="#">마을</a>
+	                <ul class="depth2 gnb4">
+	                	<li><a href="#">의상점</a></li>
+	                	<li><a href="#">악세사리점</a></li>
+	                	<li><a href="#">잡화점</a></li>
+	                	<li><a href="#">비밀상점</a></li>
+	                	<li><a href="#">환전소</a></li>
+	                </ul>
+	            </li>
+	        	<li>
+	            	<a href="#">앨범</a>
+	                <ul class="depth2 gnb5">
+	                	<li><a href="#">에드워드</a></li>
+	                	<li><a href="#">에단</a></li>
+	                	<li><a href="#">에이크</a></li>
+	                	<li><a href="#">엘리엇</a></li>
+	                	<li><a href="#">공용</a></li>
+	                	<li><a href="#">엔딩</a></li>
+	                </ul>
+	            </li>
+	        </ul>
+	        </div><!-- END .bottom_header_inner -->
+	    </div><!-- END .bottom_header -->
+	</div><!-- END #header -->
+	<!-- 내용 그리드 -->
+	<div class="content_wrapper">
+	<!-- 사이드바&달력 레이아웃 배치용 전체 그리드-->
+	<div id="mainpage"> 
+		<!-- 사이드바 그리드 & 사이드바 -->
+		<div class="sidebar">
+			<!-- 사이드바 날짜 -->
+			<div id="today">
+				<table class="sidebar_table">
+					<tr><th class="sidebar_table sidebar_table_header">10세</th></tr>
+					<tr><td class="no_padding">
+						<table class="today_table">
+							<tr><td>여름</td>
+								<td rowspan="2" id="today_week">Mon</td></tr>
+							<tr><td>상반기</td></tr>
+						</table>
+					</td></tr>
+					<tr><td colspan="2" class="today_footer"></td></tr>
+				</table>
+			</div><!-- END #today -->
+			<!-- 사이드바 로그인 -->
+			<div id="login">
+				<form action="#" method="get">
+				<table class="sidebar_table">
+					<tr><th colspan="2" class="sidebar_table sidebar_table_header">Login</th></tr>
+					<tr><td class="login_name">ID</td>
+						<td><input type="text" name="userId" size="12" /></td></tr>
+					<tr><td class="login_name">PW</td>
+						<td><input type="text" name="userPw" size="12" /></td></tr>
+					<tr><td colspan="2" id="login_submit">
+							<input type="submit" value="로그인"/></td></tr>
+					<tr><td colspan="2" class="sidebar_table_footer"></td></tr>
+				</table>
+				</form>
+			</div><!-- #login END -->
+		</div><!-- .sidebar END -->
+		<!-- 달력 그리드 & 달력 -->
+		<div id="main_calander">
+			MAIN
+		</div><!-- #main_calander END -->
+	</div><!-- #main END -->
+	</div><!-- .content_wrapper END -->
+</div><!-- .wrapper END -->
+</body>
+</html>
