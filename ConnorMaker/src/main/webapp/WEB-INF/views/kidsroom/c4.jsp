@@ -10,14 +10,38 @@
 <body>
 <%
 	//디렉토리명
-	String portraitDir = "resources/images/portrait/c4/";
+	String portraitDir = "resources/images/portrait/c1/";
 
-	//현재 상태
-	String age = "10";
-	String condition = "01";
+	//스탯창 정보
+	String room_age = "10";		//나이
+	String room_edu_policy = "무리하지 않는다"; //교육방침
+	String room_height = "177";		//키
+	String room_weight = "68";		//몸무게
+	String room_condition = "매혹";	//상태
+	String room_account = "보통";	//가계상황
+	String room_hobby = "승마";		//취미
+	String room_specialty = "미술";	//특기
+	String room_subject = "교양";	//좋아하는 과목
+	
+	//친구들에 대하여
+	String room_friend_c1 = "약해요";		//에디
+	String room_friend_c2 = "건강해요";	//에단
+	String room_friend_c3 = "활발해요";	//에이크
+	String room_friend_c4 = "착해요";		//엘리엇
+	
+	//질문
+	String room_question = "";	//질문
+	String room_answer_1 = "";	//답변1
+	String room_answer_2 = "";	//답변2
+	String room_answer_3 = "";	//답변3
+	
+	//일기
+	String room_diary_date = "10-01";	//날짜
+	String room_diary_text = "오늘은 에디와 함께 영화관에 영화를 보러 갔어요. 재미있었어요.";	//내용
 	
 	//현 페이지에서 사용되는 src
-	String portraitUrl = portraitDir + age + condition + ".png";
+	String portraitUrl = portraitDir + room_age + room_condition + ".png";
+	
 %>
 <!-- 메뉴&내용 레이아웃 배치용 전체 그리드 -->
 <div class="wrapper">
@@ -32,34 +56,34 @@
 			<table>
 				<tr>
 					<td>1</td>
-					<td colspan="2">18세</td>
+					<td colspan="2"><%=room_age%>세</td>
 					<td colspan="3">9월 10일 생</td>
 				</tr>
 				<tr>
-					<td colspan="6">무리하지 않는다</td>
+					<td colspan="6"><%=room_edu_policy%></td>
 				</tr>
 				<tr>
-					<td colspan="2">177cm</td>
-					<td colspan="2">68kg</td>
-					<td colspan="2">매혹</td>
+					<td colspan="2"><%=room_height%>cm</td>
+					<td colspan="2"><%=room_weight%>kg</td>
+					<td colspan="2"><%=room_condition %></td>
 				</tr>
 				<tr>
-					<td colspan="6">가계 상황 : 보통</td>
+					<td colspan="6">가계 상황 : <%=room_account %></td>
 				</tr>
 				<tr>
-					<td colspan="3">취미 : 승마</td>
-					<td colspan="3">특기 : 미술</td>
+					<td colspan="3">취미 : <%=room_hobby %></td>
+					<td colspan="3">특기 : <%=room_specialty %></td>
 				</tr>
 				<tr>
-					<td colspan="6">좋아하는 과목 : 교양</td>
+					<td colspan="6">좋아하는 과목 : <%=room_subject %></td>
 				</tr>
 			</table>
 			<!-- 친구들에 대하여 -->
 			<div class="basic_div about_friends">
 				<p>친구들에 대하여</p>
-				<p>에디 : 건강해요 </p>
-				<p>에단 : 건강해요 </p>
-				<p>에이크 : 활발해요</p>
+				<p>에단 : <%=room_friend_c2 %> </p>
+				<p>에이크 : <%=room_friend_c3 %></p>
+				<p>엘리엇 : <%=room_friend_c4 %></p>
 			</div>
 		</div>
 		<!-- 내용그리드>가운데 박스 -->
@@ -73,18 +97,15 @@
 			</div>
 			<!-- 아이 이름 -->
 			<div class="basic_div" id="kidsroom_name">
-				<span class="basic_span">엘 리 엇&nbsp;&nbsp;코 너</span>
+				<span class="basic_span">에 드 워 드&nbsp;&nbsp;코 너</span>
 			</div>
 		</div>
 		<!-- 내용그리드>오른쪽 박스 -->
 		<div class="kidsroom_right">
 			<div class="basic_div" id="kidsroom_diary">
-				<p>○월 ○일</p>
+				<p><%=room_diary_date %></p>
 				<p>
-					오늘은 주용과 함께 영화관에 영화를 보러 갔어요. 재미있었어요.<br />
-					스크롤 테스트<br />
-					동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세<br />
-					무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세<br />
+					<%=room_diary_text %>
 				</p>
 			</div>
 			<div id="kidsroom_schedule_title"></div>
